@@ -17,3 +17,4 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
+$router->get('/books', 'GatewayController@searchBooks');
