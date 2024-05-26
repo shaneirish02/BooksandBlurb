@@ -59,8 +59,7 @@ $app->singleton(
 |
 */
 
-//$app->configure('app');
-$app->configure('services');
+$app->configure('app');
 
 /*
 |--------------------------------------------------------------------------
