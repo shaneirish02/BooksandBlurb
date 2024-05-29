@@ -18,3 +18,4 @@ $router->get('/', function () use ($router) {
 });
 
 $router->get('/books', 'GatewayController@searchBooks');
+$router->get('/searchBook', 'GatewayController@search');
