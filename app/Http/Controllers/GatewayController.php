@@ -57,13 +57,13 @@ class GatewayController extends Controller
 
         try {
             // Construct the URL with the encoded title
-            $url = config('bookfinder.base_url') . $encodedTitle;
+            $url = config('services.base_url') . $encodedTitle;
 
             // Call the external API using RapidAPI
             $response = $client->get($url, [
                 'headers' => [
-                    'x-rapidapi-key' => config('bookfinder.api_key'),
-                    'x-rapidapi-host' => parse_url(config('bookfinder.base_url'), PHP_URL_HOST),
+                    'x-rapidapi-key' => config('services.api_key'),
+                    'x-rapidapi-host' => parse_url(config('services.base_url'), PHP_URL_HOST),
                 ]
             ]);
 

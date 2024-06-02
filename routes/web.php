@@ -18,4 +18,16 @@ $router->get('/', function () use ($router) {
 });
 
 $router->get('/books', 'GatewayController@searchBooks');
-$router->get('/searchBook', 'GatewayController@search');
+//$router->get('/searchBook', 'GatewayController@search');
+$router->get('/searchAnime', 'GatewayController@searchAnime');
+
+$router->get('/get-book', 'AllBooksApiController@search');
+$router->get('/search', 'BookFinderController@searchBooks');
+$router->get('/manga-reco', 'MyAnimeListController@getMangaRecommendations');
+$router->get('/details/{id}', 'MyAnimeListController@getMangaDetails');
+
+$router->get('/users1', 'UserController@index');
+$router->post('/users1', 'UserController@add');
+$router->get('/users1/{id}', 'UserController@show');
+$router->put('/users1/{id}', 'UserController@update');
+$router->delete('/users1/{id}', 'UserController@delete');

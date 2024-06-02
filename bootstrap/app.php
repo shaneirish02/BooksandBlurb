@@ -59,7 +59,7 @@ $app->singleton(
 |
 */
 
-$app->configure('bookfinder');
+$app->configure('services');
 
 /*
 |--------------------------------------------------------------------------
