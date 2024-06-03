@@ -9,7 +9,7 @@ class UserService {
     use ConsumesExternalService;
 
     /**
-     * The base uri to consume the UserRelated service
+     * The base uri to consume the User service
      * @var string
      */
     public $baseUri;
@@ -27,7 +27,7 @@ class UserService {
     }
 
     /**
-     * Create one user using the UserRelated service
+     * Create one user using the User service
      * @return string
      */
     public function createUsers($data) {
@@ -35,7 +35,7 @@ class UserService {
     }
 
     /**
-     * Obtain one single user from the UserRelatedService
+     * Obtain one single user from the User Service
      * @return string
      */
     public function obtainUser($id) {
@@ -43,7 +43,7 @@ class UserService {
     }
 
     /**
-     * Update an instance of user using the UserRelated service
+     * Update an instance of user using the User service
      * @return string
      */
     public function editUser($data, $id) {
@@ -51,7 +51,7 @@ class UserService {
     }
 
     /**
-     * Remove a single user using the UserRelated service
+     * Remove a single user using the User service
      * @return string
      */
     public function deleteUser($id) {

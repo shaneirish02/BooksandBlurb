@@ -31,3 +31,7 @@ $router->post('/users1', 'UserController@add');
 $router->get('/users1/{id}', 'UserController@show');
 $router->put('/users1/{id}', 'UserController@update');
 $router->delete('/users1/{id}', 'UserController@delete');
+
+$router->get('/logs1', 'AuthenticationLogController@index');
+$router->get('/logs1/{id}', 'AuthenticationLogController@show');
+$router->delete('/logs1/{id}', 'AuthenticationLogController@delete');
