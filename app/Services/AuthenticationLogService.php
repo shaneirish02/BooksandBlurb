@@ -27,6 +27,14 @@ class AuthenticationLogService {
     }
 
     /**
+     * Create one log using the Log service
+     * @return string
+     */
+    public function createLogs($data) {
+        return $this->performRequest('POST', '/logs', $data);
+    }
+
+    /**
      * Obtain one single log from the Authentication Log service
      * @return string
      */

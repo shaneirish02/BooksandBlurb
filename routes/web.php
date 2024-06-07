@@ -36,6 +36,7 @@ $router->group(['middleware' => 'client.credentials'], function () use ($router)
     $router->delete('/users1/{id}', 'UserController@delete');
 
     $router->get('/logs1', 'AuthenticationLogController@index');
+    $router->post('/logs1', 'AuthenticationLogController@add');
     $router->get('/logs1/{id}', 'AuthenticationLogController@show');
     $router->delete('/logs1/{id}', 'AuthenticationLogController@delete');
 
